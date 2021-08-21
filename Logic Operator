@@ -1,0 +1,12 @@
+—- AND (both conditions must be True)
+SELECT *
+FROM customers
+WHERE birthdate > ‘1990-01-01’ AND points > 1000
+—- OR (at least one condition must be True)
+SELECT *
+FROM customers
+WHERE birthdate > ‘1990-01-01’ OR points > 1000
+—- NOT (to negate a condition)
+SELECT *
+FROM customers
+WHERE NOT (birthdate > ‘1990-01-01’)
